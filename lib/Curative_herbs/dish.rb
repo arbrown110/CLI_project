@@ -4,11 +4,11 @@ require 'pry'
 
 
 class CurativeHerbs::Herbs
-    attr_accessor :name, :recipe, :similar
+    attr_accessor :title, :recipe, :similar
     @@all = []
     
-    def initialize (name,recipe,similiar)
-        @name = name
+    def initialize (title,recipe,similiar)
+        @title = title
         @recipe = recipe
         @similar = similiar
         @@all <<self

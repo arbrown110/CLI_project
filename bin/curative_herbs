@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "bundle/setup"
+require './lib/Curative_herbs'  
+
+Curativeherbs::CLI.new.call

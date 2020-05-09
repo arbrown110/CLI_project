@@ -1,10 +1,10 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "curative_herbs/version"
+require "Curative_Herbs/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "curative_herbs"
+  spec.name          = "CurativeHerbs"
   spec.version       = CurativeHerbs::VERSION
   spec.authors       = ["TODO: Write your name"]
   spec.email         = ["TODO: Write your email address"]

@@ -1,21 +1,35 @@
-require './lib/Curative_herbs/cli'
+require './lib/Curative_Herbs/cli'
 
-class Curativeherbs::CLI
+class CurativeHerbs::CLI
 
- def call
+ 
+  def call
+    CurativeHerbs::APi.new.fetch
+    CurativeHerbs::Dish.all.each do |Dish|
+        puts dish.name
+    end
+  end
+end       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    #def call
    ### whatever code###
    ## provide everything you want to do##
-   list herbs
-   details of herbs or properties
-   leaving
- end
+ #  list herbs
+ #  details of herbs or properties
+ #  leaving
+ #end
 
- def list_herbs
-  puts <<-DOC.gsub /^\s"/,'  '{data in the middle}
-   @herbs = Curativeherbs::Herbs.knowledge
-     ** herb has attr of  :name, :history, :learn**
-   DOC
- end
- def details of herbs or properties
+ #def list_herbs
+#   DOC
+ #end
+ #def details of herbs or properties
   #if else when statements#
- end
+# end

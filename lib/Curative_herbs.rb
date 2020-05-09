@@ -1,8 +1,8 @@
 require 'open-url'
 require 'nokogiri'
 require 'pry'
-require 'HTTParty'
+require 'net/http'
   
-require_relative "./Curative_herbs/cli"
-require_relative "./Curative_herbs/herbs"
-require_relative "./Curative_herbs/version"
+require_relative "./Curative_Herbs/cli"
+require_relative "./Curative_Herbs/herbs"
+require_relative "./Curative_Herbs/version"
